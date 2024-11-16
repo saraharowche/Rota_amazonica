@@ -406,10 +406,10 @@
 .bg-breadcrumb .breadcrumb-item a {
     color: var(--bs-secondary) !important;
 }
-/*** Single Page Hero Header End ***/
+/*** fim do cabeçalho de página única ***/
 
 
-/*** About Start ***/
+/*** inicio sobre ***/
 .about .container .section-about-title {
     position: relative;
     display: inline-block;
@@ -427,7 +427,7 @@
     margin-right: -50px;
     border: 1px solid var(--bs-primary) !important;
 }
-/*** About End ***/
+/*** fim sobre ***/
 
 
 .modal .modal-body .card-img-top {
@@ -686,7 +686,7 @@
 
 /*** Tour Booking Start ***/
 .booking {
-    background: linear-gradient(rgba(3, 43, 23, .8), rgba(3, 43, 23, .8)), url(../img/carousel-1\ \(2\).png);
+    background: linear-gradient(rgba(3, 43, 23, .8), rgba(3, 43, 23, .8)), url(../img/ideia2.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
