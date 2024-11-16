@@ -430,17 +430,6 @@
 /*** fim sobre ***/
 
 
-.modal .modal-body .card-img-top {
-    width: 100%;
-    height: auto;
-    max-width: 90%; /* Garante que a imagem não ultrapasse a largura do modal */
-    object-fit: contain; /* Mantém a imagem dentro dos limites do contêiner */
-    display: block;
-    margin: 0 auto;
-}
-
-
-
 /*** Explore Tour Start ***/
 .ExploreTour .tab-class .nav-item {
     padding: 0 0 20px 0;
@@ -610,7 +599,7 @@
 /*** Explore Tour End ***/
 
 
-/*** Gallery Start ***/
+/*** inicio cards ***/
 .gallery .gallery-item {
     position: relative;
     overflow: hidden;
@@ -663,8 +652,25 @@
     transition: 0.5s;
 }
 
+/* Apenas para imagens nos cards */
 .gallery .gallery-item:hover img {
     transform: scale(1.2);
+}
+
+/* Remove o efeito de transformação para imagens no modal */
+.modal .gallery-item img,
+.modal .card-img-top {
+    transform: none !important;
+    transition: none !important;
+}
+
+.modal .modal-body .card-img-top {
+    width: 100%;
+    height: auto;
+    max-width: 90%; /* Garante que a imagem não ultrapasse a largura do modal */
+    object-fit: contain; /* Mantém a imagem dentro dos limites do contêiner */
+    display: block;
+    margin: 0 auto;
 }
 
 .gallery .gallery-item:hover .gallery-content {
@@ -682,9 +688,9 @@
     color: var(--bs-white) !important;
 }
 
-/*** Gallery End ***/
+/*** fim cards ***/
 
-/*** Tour Booking Start ***/
+/*** inicio contato ***/
 .booking {
     background: linear-gradient(rgba(3, 43, 23, .8), rgba(3, 43, 23, .8)), url(../img/ideia2.png);
     background-position: center center;
@@ -724,9 +730,9 @@
 
 
 
-/*** Tour Booking end ***/
+/*** fim contatos ***/
 
-/*** Travel Guide Start ***/
+/*** inicio membros ***/
 .guide .guide-item .guide-img {
     position: relative;
 }
@@ -813,7 +819,7 @@
 .guide .guide-item:hover .guide-title .guide-title-inner h4 {
     color: var(--bs-white);
 }
-/*** Travel Guide End ***/
+/*** fim membros ***/
 
 
 /*** Blog Start ***/
