@@ -28,7 +28,7 @@
     z-index: 99;
 }
 
-/*** Button Start ***/
+/*** inicio botton ***/
 .btn {
     font-weight: 600;
     transition: .5s;
@@ -92,7 +92,7 @@
     color: var(--bs-secondary) !important;
 }
 
-/*** Section Title Start ***/
+/*** inicio seçoes de titulos ***/
 .section-title {
     position: relative;
     display: inline-block;
