@@ -116,7 +116,7 @@
 
     //Contato
     function showSuccessMessage(event) {
-        event.preventDefault(); // Impede o envio do formulário
+        event.preventDefault(); 
         alert('Enviado com sucesso!');
       }
     
