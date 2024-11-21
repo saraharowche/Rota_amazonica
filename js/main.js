@@ -114,6 +114,11 @@
         }
     });
 
+    //Contato
+    function showSuccessMessage(event) {
+        event.preventDefault(); 
+        alert('Enviado com sucesso!');
+      }
     
    // Back to top button
    $(window).scroll(function () {
