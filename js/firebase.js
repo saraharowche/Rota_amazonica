@@ -19,6 +19,7 @@ const app = initializeApp(firebaseConfig);
 
 // Inicializa o Realtime Database
 const database = getDatabase(app);
+const db = getDatabase(app);
 
 // Função para salvar um comentário
 function salvarComentario(idPonto) {
@@ -49,14 +50,22 @@ function salvarComentario(idPonto) {
 // Função para carregar os comentários
 function carregarComentarios(idPonto) {
     const comentariosRef = ref(database, `comentarios/${idPonto}`);
-    const comentariosDiv = document.getElementById(`comentarios-${idPonto}`);
+    const comentariosDiv = document.getElementById(`comentarios-${idPonto}`); // ID dinâmico de cada ponto
 
+    // Verifique se a div foi encontrada
+    if (!comentariosDiv) {
+        console.error("Div de comentários não encontrada para o ponto", idPonto);
+        return;
+    }
+
+    // Carregar os dados do Firebase
     onValue(comentariosRef, (snapshot) => {
         comentariosDiv.innerHTML = ""; // Limpa a área antes de renderizar
         const dados = snapshot.val();
         console.log(dados);
 
         if (dados) {
+            // Para cada comentário no banco de dados, cria-se um item
             Object.values(dados).forEach(({ nome, comentario }) => {
                 const item = document.createElement("p");
                 item.textContent = `${nome}: ${comentario}`;
@@ -66,4 +75,22 @@ function carregarComentarios(idPonto) {
             comentariosDiv.innerHTML = "<p>Seja o primeiro a comentar!</p>";
         }
     });
+}
+
+// Função para salvar o comentário
+function salvarComentario(ponto) {
+    const nome = document.getElementById(`nome-${ponto}`).value;
+    const comentario = document.getElementById(`comentario-${ponto}`).value;
+
+    if (nome && comentario) {
+        const comentariosDiv = document.getElementById(`comentarios-${ponto}`);
+        const novoComentario = document.createElement('div');
+        novoComentario.classList.add('comentario');
+        novoComentario.innerHTML = `<strong>${nome}</strong>: <p>${comentario}</p>`;
+        comentariosDiv.appendChild(novoComentario);
+
+        // Limpa o formulário após o envio
+        document.getElementById(`nome-${ponto}`).value = '';
+        document.getElementById(`comentario-${ponto}`).value = '';
+    }
 }

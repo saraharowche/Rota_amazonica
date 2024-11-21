@@ -175,7 +175,7 @@
             </div>
             <!-- fim Carousel -->
         </div>
-        <!--    **Barra de pesquisa***
+        <!--    ***Barra de pesquisa***
         <div class="container-fluid search-bar position-relative" style="top: -50%; transform: translateY(-50%);">
             <div class="container">
                 <div class="position-relative rounded-pill w-100 mx-auto p-5" style="background: #032B17;">
@@ -279,16 +279,25 @@
 
                                                 <!-- Seção de Comentários -->
                                                 <div class="comments-section">
-                                                    <h6>Comentários:</h6>
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#infoModal-1" class="my-auto" onclick="carregarComentarios('banzeiro')">
-                                                        <i class="fas fa-plus fa-2x text-white"></i>
-                                                    </a>
-                                                    <div id="comentarios-banzeiro"></div> <!-- Aqui os comentários serão carregados -->
-
-                                                    <h6>Deixe seu comentário:</h6>
-                                                    <input type="text" id="nome-banzeiro" class="form-control mb-2" placeholder="Seu nome">
-                                                    <textarea id="comentario-banzeiro" class="form-control mb-2" placeholder="Seu comentário"></textarea>
-                                                    <button class="btn btn-primary" onclick="salvarComentario('banzeiro')">Enviar</button>
+                                                    <div class="flex-container">
+                                                        <div>
+                                                            <h5><a><i class="bi bi-chat-left-text"></i></a> Comentários</h5>
+                                                        </div>
+                                                        <div>
+                                                            <a href="#comment" class=" btn btn-primary button--small" style="top:auto; right: 10px;">Deixe seu comentário</a>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#infoModal-1" class="my-auto" onclick="carregarComentarios('banzeiro')"></a>
+                                                    <div id="comentarios-banzeiro" class="respostas"></div> <!-- Aqui os comentários serão carregados -->
+                                                    
+                                                    <!-- Formulario para comentários -->
+                                                    <div id="comentario-form">
+                                                        <h5 id="comment">Deixe seu comentário</h5>
+                                                        <input type="text" id="nome-banzeiro" class="form-control mb-2" placeholder="Seu nome">
+                                                        <textarea id="comentario-banzeiro" class="form-control mb-2" placeholder="Seu comentário"></textarea>
+                                                        <button class="btn btn-primary" onclick="salvarComentario('banzeiro')">Enviar</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -333,16 +342,25 @@
 
                                                 <!-- Seção de Comentários -->
                                                 <div class="comments-section">
-                                                    <h6>Comentários:</h6>
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#infoModal-2" class="my-auto" onclick="carregarComentarios('festival-de-parintins')">
-                                                        <i class="fas fa-plus fa-2x text-white"></i>
-                                                    </a>
-                                                    <div id="comentarios-festival-de-parintins"></div> <!-- Aqui os comentários serão carregados -->
-
-                                                    <h6>Deixe seu comentário:</h6>
-                                                    <input type="text" id="nome-festival-de-parintins" class="form-control mb-2" placeholder="Seu nome">
-                                                    <textarea id="comentario-festival-de-parintins" class="form-control mb-2" placeholder="Seu comentário"></textarea>
-                                                    <button class="btn btn-primary" onclick="salvarComentario('festival-de-parintins')">Enviar</button>
+                                                    <div class="flex-container">
+                                                        <div>
+                                                            <h5><a><i class="bi bi-chat-left-text"></i></a> Comentários</h5>
+                                                        </div>
+                                                        <div>
+                                                            <a href="#comment" class=" btn btn-primary button--small" style="top:auto; right: 10px;">Deixe seu comentário</a>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#infoModal-2" class="my-auto" onclick="carregarComentarios('festival-de-parintins')"></a>
+                                                    <div id="comentarios-festival-de-parintins" class="respostas"></div> <!-- Aqui os comentários serão carregados -->
+                                                    
+                                                    <!-- Formulario para comentários -->
+                                                    <div id="comentario-form">
+                                                        <h5 id="comment">Deixe seu comentário</h5>
+                                                        <input type="text" id="nome-festival-de-parintins" class="form-control mb-2" placeholder="Seu nome">
+                                                        <textarea id="comentario-festival-de-parintins" class="form-control mb-2" placeholder="Seu comentário"></textarea>
+                                                        <button class="btn btn-primary" onclick="salvarComentario('festival-de-parintins')">Enviar</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -388,16 +406,25 @@
 
                                                 <!-- Seção de Comentários -->
                                                 <div class="comments-section">
-                                                    <h6>Comentários:</h6>
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#infoModal-3" class="my-auto" onclick="carregarComentarios('hotel-tropical')">
-                                                        <i class="fas fa-plus fa-2x text-white"></i>
-                                                    </a>
-                                                    <div id="comentarios-hotel-tropical"></div> <!-- Aqui os comentários serão carregados -->
-
-                                                    <h6>Deixe seu comentário:</h6>
-                                                    <input type="text" id="nome-hotel-tropical" class="form-control mb-2" placeholder="Seu nome">
-                                                    <textarea id="comentario-hotel-tropical" class="form-control mb-2" placeholder="Seu comentário"></textarea>
-                                                    <button class="btn btn-primary" onclick="salvarComentario('hotel-tropical')">Enviar</button>
+                                                    <div class="flex-container">
+                                                        <div>
+                                                            <h5><a><i class="bi bi-chat-left-text"></i></a> Comentários</h5>
+                                                        </div>
+                                                        <div>
+                                                            <a href="#comment" class=" btn btn-primary button--small" style="top:auto; right: 10px;">Deixe seu comentário</a>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#infoModal-3" class="my-auto" onclick="carregarComentarios('hotel-tropical')"></a>
+                                                    <div id="comentarios-hotel-tropical" class="respostas"></div> <!-- Aqui os comentários serão carregados -->
+                                                    
+                                                    <!-- Formulario para comentários -->
+                                                    <div id="comentario-form">
+                                                        <h5 id="comment">Deixe seu comentário</h5>
+                                                        <input type="text" id="nome-hotel-tropical" class="form-control mb-2" placeholder="Seu nome">
+                                                        <textarea id="comentario-hotel-tropical" class="form-control mb-2" placeholder="Seu comentário"></textarea>
+                                                        <button class="btn btn-primary" onclick="salvarComentario('hotel-tropical')">Enviar</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -443,16 +470,25 @@
 
                                                 <!-- Seção de Comentários -->
                                                 <div class="comments-section">
-                                                    <h6>Comentários:</h6>
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#infoModal-4" class="my-auto" onclick="carregarComentarios('teatro-amazonas')">
-                                                        <i class="fas fa-plus fa-2x text-white"></i>
-                                                    </a>
-                                                    <div id="comentarios-teatro-amazonas"></div> <!-- Aqui os comentários serão carregados -->
-
-                                                    <h6>Deixe seu comentário:</h6>
-                                                    <input type="text" id="nome-teatro-amazonas" class="form-control mb-2" placeholder="Seu nome">
-                                                    <textarea id="comentario-teatro-amazonas" class="form-control mb-2" placeholder="Seu comentário"></textarea>
-                                                    <button class="btn btn-primary" onclick="salvarComentario('teatro-amazonas')">Enviar</button>
+                                                    <div class="flex-container">
+                                                        <div>
+                                                            <h5><a><i class="bi bi-chat-left-text"></i></a> Comentários</h5>
+                                                        </div>
+                                                        <div>
+                                                            <a href="#comment" class=" btn btn-primary button--small" style="top:auto; right: 10px;">Deixe seu comentário</a>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#infoModal-4" class="my-auto" onclick="carregarComentarios('teatro-amazonas')"></a>
+                                                    <div id="comentarios-teatro-amazonas" class="respostas"></div> <!-- Aqui os comentários serão carregados -->
+                                                    
+                                                    <!-- Formulario para comentários -->
+                                                    <div id="comentario-form">
+                                                        <h5 id="comment">Deixe seu comentário</h5>
+                                                        <input type="text" id="nome-teatro-amazonas" class="form-control mb-2" placeholder="Seu nome">
+                                                        <textarea id="comentario-teatro-amazonas" class="form-control mb-2" placeholder="Seu comentário"></textarea>
+                                                        <button class="btn btn-primary" onclick="salvarComentario('teatro-amazonas')">Enviar</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -499,16 +535,25 @@
 
                                                 <!-- Seção de Comentários -->
                                                 <div class="comments-section">
-                                                    <h6>Comentários:</h6>
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#infoModal-5" class="my-auto" onclick="carregarComentarios('bosque-ciencia')">
-                                                        <i class="fas fa-plus fa-2x text-white"></i>
-                                                    </a>
-                                                    <div id="comentarios-bosque-ciencia"></div> <!-- Aqui os comentários serão carregados -->
-
-                                                    <h6>Deixe seu comentário:</h6>
-                                                    <input type="text" id="nome-bosque-ciencia" class="form-control mb-2" placeholder="Seu nome">
-                                                    <textarea id="comentario-bosque-ciencia" class="form-control mb-2" placeholder="Seu comentário"></textarea>
-                                                    <button class="btn btn-primary" onclick="salvarComentario('bosque-ciencia')">Enviar</button>
+                                                    <div class="flex-container">
+                                                        <div>
+                                                            <h5><a><i class="bi bi-chat-left-text"></i></a> Comentários</h5>
+                                                        </div>
+                                                        <div>
+                                                            <a href="#comment" class=" btn btn-primary button--small" style="top:auto; right: 10px;">Deixe seu comentário</a>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#infoModal-5" class="my-auto" onclick="carregarComentarios('bosque-ciencia')"></a>
+                                                    <div id="comentarios-bosque-ciencia" class="respostas"></div> <!-- Aqui os comentários serão carregados -->
+                                                    
+                                                    <!-- Formulario para comentários -->
+                                                    <div id="comentario-form">
+                                                        <h5 id="comment">Deixe seu comentário</h5>
+                                                        <input type="text" id="nome-bosque-ciencia" class="form-control mb-2" placeholder="Seu nome">
+                                                        <textarea id="comentario-bosque-ciencia" class="form-control mb-2" placeholder="Seu comentário"></textarea>
+                                                        <button class="btn btn-primary" onclick="salvarComentario('bosque-ciencia')">Enviar</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -555,16 +600,25 @@
 
                                                 <!-- Seção de Comentários -->
                                                 <div class="comments-section">
-                                                    <h6>Comentários:</h6>
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#infoModal-6" class="my-auto" onclick="carregarComentarios('cachoeira-neblina')">
-                                                        <i class="fas fa-plus fa-2x text-white"></i>
-                                                    </a>
-                                                    <div id="comentarios-cachoeira-neblina"></div> <!-- Aqui os comentários serão carregados -->
-
-                                                    <h6>Deixe seu comentário:</h6>
-                                                    <input type="text" id="nome-cachoeira-neblina" class="form-control mb-2" placeholder="Seu nome">
-                                                    <textarea id="comentario-cachoeira-neblina" class="form-control mb-2" placeholder="Seu comentário"></textarea>
-                                                    <button class="btn btn-primary" onclick="salvarComentario('cachoeira-neblina')">Enviar</button>
+                                                    <div class="flex-container">
+                                                        <div>
+                                                            <h5><a><i class="bi bi-chat-left-text"></i></a> Comentários</h5>
+                                                        </div>
+                                                        <div>
+                                                            <a href="#comment" class=" btn btn-primary button--small" style="top:auto; right: 10px;">Deixe seu comentário</a>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#infoModal-6" class="my-auto" onclick="carregarComentarios('cachoeira-neblina')"></a>
+                                                    <div id="comentarios-cachoeira-neblina" class="respostas"></div> <!-- Aqui os comentários serão carregados -->
+                                                    
+                                                    <!-- Formulario para comentários -->
+                                                    <div id="comentario-form">
+                                                        <h5 id="comment">Deixe seu comentário</h5>
+                                                        <input type="text" id="nome-cachoeira-neblina" class="form-control mb-2" placeholder="Seu nome">
+                                                        <textarea id="comentario-cachoeira-neblina" class="form-control mb-2" placeholder="Seu comentário"></textarea>
+                                                        <button class="btn btn-primary" onclick="salvarComentario('cachoeira-neblina')">Enviar</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -611,16 +665,25 @@
 
                                                 <!-- Seção de Comentários -->
                                                 <div class="comments-section">
-                                                    <h6>Comentários:</h6>
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#infoModal-7" class="my-auto" onclick="carregarComentarios('amazon-river')">
-                                                        <i class="fas fa-plus fa-2x text-white"></i>
-                                                    </a>
-                                                    <div id="comentarios-amazon-river"></div> <!-- Aqui os comentários serão carregados -->
-
-                                                    <h6>Deixe seu comentário:</h6>
-                                                    <input type="text" id="nome-amazon-river" class="form-control mb-2" placeholder="Seu nome">
-                                                    <textarea id="comentario-amazon-river" class="form-control mb-2" placeholder="Seu comentário"></textarea>
-                                                    <button class="btn btn-primary" onclick="salvarComentario('amazon-river')">Enviar</button>
+                                                    <div class="flex-container">
+                                                        <div>
+                                                            <h5><a><i class="bi bi-chat-left-text"></i></a> Comentários</h5>
+                                                        </div>
+                                                        <div>
+                                                            <a href="#comment" class=" btn btn-primary button--small" style="top:auto; right: 10px;">Deixe seu comentário</a>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#infoModal-7" class="my-auto" onclick="carregarComentarios('amazon-river')"></a>
+                                                    <div id="comentarios-amazon-river" class="respostas"></div> <!-- Aqui os comentários serão carregados -->
+                                                    
+                                                    <!-- Formulario para comentários -->
+                                                    <div id="comentario-form">
+                                                        <h5 id="comment">Deixe seu comentário</h5>
+                                                        <input type="text" id="nome-amazon-river" class="form-control mb-2" placeholder="Seu nome">
+                                                        <textarea id="comentario-amazon-river" class="form-control mb-2" placeholder="Seu comentário"></textarea>
+                                                        <button class="btn btn-primary" onclick="salvarComentario('amazon-river')">Enviar</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -667,16 +730,25 @@
 
                                                 <!-- Seção de Comentários -->
                                                 <div class="comments-section">
-                                                    <h6>Comentários:</h6>
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#infoModal-8" class="my-auto" onclick="carregarComentarios('caverna-maroaga')">
-                                                        <i class="fas fa-plus fa-2x text-white"></i>
-                                                    </a>
-                                                    <div id="comentarios-caverna-maroaga"></div> <!-- Aqui os comentários serão carregados -->
-
-                                                    <h6>Deixe seu comentário:</h6>
-                                                    <input type="text" id="nome-caverna-maroaga" class="form-control mb-2" placeholder="Seu nome">
-                                                    <textarea id="comentario-caverna-maroaga" class="form-control mb-2" placeholder="Seu comentário"></textarea>
-                                                    <button class="btn btn-primary" onclick="salvarComentario('caverna-maroaga')">Enviar</button>
+                                                    <div class="flex-container">
+                                                        <div>
+                                                            <h5><a><i class="bi bi-chat-left-text"></i></a> Comentários</h5>
+                                                        </div>
+                                                        <div>
+                                                            <a href="#comment" class=" btn btn-primary button--small" style="top:auto; right: 10px;">Deixe seu comentário</a>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#infoModal-8" class="my-auto" onclick="carregarComentarios('caverna-moraoga')"></a>
+                                                    <div id="comentarios-caverna-moraoga" class="respostas"></div> <!-- Aqui os comentários serão carregados -->
+                                                    
+                                                    <!-- Formulario para comentários -->
+                                                    <div id="comentario-form">
+                                                        <h5 id="comment">Deixe seu comentário</h5>
+                                                        <input type="text" id="nome-caverna-moraoga" class="form-control mb-2" placeholder="Seu nome">
+                                                        <textarea id="comentario-caverna-moraoga" class="form-control mb-2" placeholder="Seu comentário"></textarea>
+                                                        <button class="btn btn-primary" onclick="salvarComentario('caverna-moraoga')">Enviar</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -723,16 +795,25 @@
 
                                                 <!-- Seção de Comentários -->
                                                 <div class="comments-section">
-                                                    <h6>Comentários:</h6>
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#infoModal-9" class="my-auto" onclick="carregarComentarios('canto-peixada')">
-                                                        <i class="fas fa-plus fa-2x text-white"></i>
-                                                    </a>
-                                                    <div id="comentarios-canto-peixada"></div> <!-- Aqui os comentários serão carregados -->
-
-                                                    <h6>Deixe seu comentário:</h6>
-                                                    <input type="text" id="nome-canto-peixada" class="form-control mb-2" placeholder="Seu nome">
-                                                    <textarea id="comentario-canto-peixada" class="form-control mb-2" placeholder="Seu comentário"></textarea>
-                                                    <button class="btn btn-primary" onclick="salvarComentario('canto-peixada')">Enviar</button>
+                                                    <div class="flex-container">
+                                                        <div>
+                                                            <h5><a><i class="bi bi-chat-left-text"></i></a> Comentários</h5>
+                                                        </div>
+                                                        <div>
+                                                            <a href="#comment" class=" btn btn-primary button--small" style="top:auto; right: 10px;">Deixe seu comentário</a>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#infoModal-9" class="my-auto" onclick="carregarComentarios('canto-peixada')"></a>
+                                                    <div id="comentarios-canto-peixada" class="respostas"></div> <!-- Aqui os comentários serão carregados -->
+                                                    
+                                                    <!-- Formulario para comentários -->
+                                                    <div id="comentario-form">
+                                                        <h5 id="comment">Deixe seu comentário</h5>
+                                                        <input type="text" id="nome-canto-peixada" class="form-control mb-2" placeholder="Seu nome">
+                                                        <textarea id="comentario-canto-peixada" class="form-control mb-2" placeholder="Seu comentário"></textarea>
+                                                        <button class="btn btn-primary" onclick="salvarComentario('canto-peixada')">Enviar</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -778,16 +859,25 @@
 
                                                 <!-- Seção de Comentários -->
                                                 <div class="comments-section">
-                                                    <h6>Comentários:</h6>
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#infoModal-10" class="my-auto" onclick="carregarComentarios('museu-seringa')">
-                                                        <i class="fas fa-plus fa-2x text-white"></i>
-                                                    </a>
-                                                    <div id="comentarios-museu-seringa"></div> <!-- Aqui os comentários serão carregados -->
-
-                                                    <h6>Deixe seu comentário:</h6>
-                                                    <input type="text" id="nome-museu-seringa" class="form-control mb-2" placeholder="Seu nome">
-                                                    <textarea id="comentario-museu-seringa" class="form-control mb-2" placeholder="Seu comentário"></textarea>
-                                                    <button class="btn btn-primary" onclick="salvarComentario('museu-seringa')">Enviar</button>
+                                                    <div class="flex-container">
+                                                        <div>
+                                                            <h5><a><i class="bi bi-chat-left-text"></i></a> Comentários</h5>
+                                                        </div>
+                                                        <div>
+                                                            <a href="#comment" class=" btn btn-primary button--small" style="top:auto; right: 10px;">Deixe seu comentário</a>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#infoModal-10" class="my-auto" onclick="carregarComentarios('museu-seringa')"></a>
+                                                    <div id="comentarios-museu-seringa" class="respostas"></div> <!-- Aqui os comentários serão carregados -->
+                                                    
+                                                    <!-- Formulario para comentários -->
+                                                    <div id="comentario-form">
+                                                        <h5 id="comment">Deixe seu comentário</h5>
+                                                        <input type="text" id="nome-museu-seringa" class="form-control mb-2" placeholder="Seu nome">
+                                                        <textarea id="comentario-museu-seringa" class="form-control mb-2" placeholder="Seu comentário"></textarea>
+                                                        <button class="btn btn-primary" onclick="salvarComentario('museu-seringa')">Enviar</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

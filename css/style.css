@@ -718,6 +718,31 @@
     color: var(--bs-white) !important;
 }
 
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.comments-section {
+    padding: 25px;
+    background-color: #f9f9f9; /* Cor de fundo opcional para destacar a seção */
+    border-radius: 8px;
+}
+
+.respostas {
+
+}
+
+#comentario-form {
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff; /* Cor de fundo para o formulário */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Um pouco de sombra para o formulário */
+}
+
 /*** fim cards ***/
 
 /*** inicio contato ***/
