@@ -4,14 +4,14 @@ import { getDatabase, ref, set, push, onValue } from "firebase/database";
 
 // Configuração do Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyBZQpNf1eqdegfdpsKqCtBY7d1uqGvoqaw",
-  authDomain: "rota-ica.firebaseapp.com",
-  databaseURL: "https://rota-ica-default-rtdb.firebaseio.com",
-  projectId: "rota-ica",
-  storageBucket: "rota-ica.firebasestorage.app",
-  messagingSenderId: "889924285258",
-  appId: "1:889924285258:web:5473e31336d6be033447b3",
-  measurementId: "G-4YW9RWTL71",
+    apiKey: "AIzaSyBZQpNf1eqdegfdpsKqCtBY7d1uqGvoqaw",
+    authDomain: "site-comentarios.firebaseapp.com", 
+    databaseURL: "https://site-comentarios-default-rtdb.firebaseio.com", 
+    projectId: "rota-amazonica",  
+    storageBucket: "site-comentarios.appspot.com",  
+    messagingSenderId: "889924285258",
+    appId: "1:889924285258:web:5473e31336d6be033447b3",
+    measurementId: "G-4YW9RWTL71"
 };
 
 // Inicializa o Firebase
@@ -24,6 +24,8 @@ const database = getDatabase(app);
 function salvarComentario(idPonto) {
     const nome = document.getElementById(`nome-${idPonto}`).value;
     const comentario = document.getElementById(`comentario-${idPonto}`).value;
+
+    console.log(nome, comentario);
 
     if (!nome || !comentario) {
         alert("Por favor, preencha todos os campos!");
@@ -52,6 +54,8 @@ function carregarComentarios(idPonto) {
     onValue(comentariosRef, (snapshot) => {
         comentariosDiv.innerHTML = ""; // Limpa a área antes de renderizar
         const dados = snapshot.val();
+        console.log(dados);
+
         if (dados) {
             Object.values(dados).forEach(({ nome, comentario }) => {
                 const item = document.createElement("p");
